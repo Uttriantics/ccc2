@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .combined-frame {
+            width: 40%; /* Atur lebar peta */
+            max-width: 700px; /* Atur lebar maksimum */
+            height: 400px; /* Atur tinggi peta */
+            margin: 0 auto; /* Pusatkan peta di halaman */
+            border: 5px solid #333; /* Bingkai persegi */
+            border-radius: 20px; /* Membuat sudut membulat */
+            overflow: hidden; /* Menyembunyikan bagian iframe yang keluar dari bingkai */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan jika diinginkan */
+        }
+        .combined-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="Logo_Kota_Bukittinggi.png" alt="Logo Instansi" class="logo"> <!-- Ganti dengan jalur ke logo instansi Anda -->
+            <div class="title">
+                <h2>SIMTARU</h2>
+                <h3>BUKITTINGGI</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="peta.html">Peta</a></li>
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="dokumen.html">Dokumen</a></li>
+                <li><a href="pengaduan.html">Pengaduan</a></li>
+                <li><a href="tentang kami.html">Tentang Kami</a></li>
+                <li><a href="layanan informasi.html">Layanan Informasi</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="text-content">
+                <h1>SISTEM INFORMASI TATA RUANG (SIMTARU) KOTA BUKITTINGGI</h1>
+                <p>Monitoring aktifitas perencanaan, pemanfaatan, dan pengendalian tata ruang secara digital.</p>
+            </div>
+            <div class="combined-frame">
+                <iframe src="qgis2web_2024_08_05-15_46_45_240453/index.html" title="Peta Interaktif"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="info-section">
+        <div class="info-box">
+            <h2>Apa itu SIMTARU?</h2>
+            <p>SIMTARU (Sistem Informasi Tata Ruang) adalah sebuah sistem digital yang digunakan untuk memantau, merencanakan, memanfaatkan, dan mengendalikan tata ruang secara efisien dan efektif. Dengan SIMTARU, pemerintah dapat memastikan bahwa penggunaan lahan dan pembangunan dilakukan sesuai dengan rencana tata ruang yang telah ditetapkan, sehingga mendukung pembangunan berkelanjutan dan mengurangi risiko konflik penggunaan lahan.</p>
+        </div>
+        <div class="info-box">
+            <h2>Layanan SIMTARU</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="logo geo1.jpeg" alt="Geo-Informasi"> <!-- Ganti dengan jalur ke gambar Geo-Informasi Anda -->
+                    <p>Geo-Informasi: Layanan informasi geografis yang mencakup peta digital dan data spasial.</p>
+                </div>
+                <div class="service">
+                    <img src="logo dokumen.png" alt="Dokumen"> <!-- Ganti dengan jalur ke gambar Dokumen Anda -->
+                    <p>Dokumen: Akses ke dokumen terkait tata ruang dan pembangunan.</p>
+                </div>
+                <div class="service">
+                    <img src="logo pengaduan.png" alt="Pengaduan"> <!-- Ganti dengan jalur ke gambar Pengaduan Anda -->
+                    <p>Pengaduan: Fasilitas untuk menyampaikan keluhan dan masukan terkait tata ruang.</p>
+                </div>
+                <div class="service">
+                    <img src="logo regulasi.png" alt="Regulasi"> <!-- Ganti dengan jalur ke gambar Regulasi Anda -->
+                    <p>Regulasi: Informasi mengenai peraturan dan kebijakan tata ruang.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <img src="Logo_Kota_Bukittinggi.png" alt="Logo 1"> <!-- Ganti dengan jalur ke logo pertama Anda -->
+            <img src="logo pupr.jpg" alt="Logo 2"> <!-- Ganti dengan jalur ke logo kedua Anda -->
+        </div>
+        <div class="footer-right">
+            <h2>Alamat Kantor</h2>
+            <p>Jl. Ombilin No.169, Belakang Balok, Kec. Aur Birugo Tigo Baleh, Kota Bukittinggi, Sumatera Barat 26181</p>
+            <p>SIMTARU Dinas Pekerjaan Umum dan Penataan Ruang (PUPR) Kota Bukittinggi</p>
+            <p>&copy; 2024 SIMTARU Kota Bukittinggi</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

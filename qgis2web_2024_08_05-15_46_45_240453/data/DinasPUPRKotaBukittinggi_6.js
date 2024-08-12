@@ -1,0 +1,1 @@
+var json_DinasPUPRKotaBukittinggi_6 = {"type":"FeatureCollection","name":"DinasPUPRKotaBukittinggi_6","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"y":-0.31388,"x":100.37108,"lokasi":"Dinas PUPR"},"geometry":{"type":"Point","coordinates":[100.3710806,-0.313879301]}}]}

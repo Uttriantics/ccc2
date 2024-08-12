@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Tambahkan background pada seluruh halaman */
+        body {
+            background-image: url('bg tentang kami.jpeg'); /* Ganti dengan jalur gambar background Anda */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff; /* Mengubah warna teks menjadi putih agar kontras dengan background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tambahkan background overlay untuk membuat teks lebih mudah dibaca */
+        .container {
+            background-color: rgba(252, 250, 250, 0);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        /* CSS untuk gambar dengan bingkai lingkaran */
+        .info-box img {
+            width: 250px; /* Sesuaikan ukuran gambar */
+            height: 250px; /* Sesuaikan ukuran gambar */
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-left: 20px; /* Menambahkan jarak antara gambar dan teks */
+        }
+        .info-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .info-box-content {
+            flex: 1; /* Memberikan fleksibilitas pada konten teks */
+            max-width: 60%; /* Menentukan lebar maksimal untuk konten teks */
+        }
+        .info-section {
+            width: 100%;
+        }
+        /* CSS untuk gambar dengan bingkai persegi */
+        .square-frame img {
+            width: 300px; /* Sesuaikan ukuran gambar */
+            height: 300px; /* Sesuaikan ukuran gambar */
+            object-fit: cover;
+            border: 5px solid #fff; /* Warna dan ukuran bingkai */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+            margin-left: 20px; /* Menambahkan jarak antara gambar dan teks */
+        }
+        /* CSS untuk gambar bagan struktural */
+        .org-chart img {
+            width: 100%; /* Lebar penuh untuk gambar bagan */
+            max-width: 900px; /* Lebar maksimal untuk gambar bagan */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            border: 5px solid #2950cfbf; /* Warna dan ukuran bingkai */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.123); /* Efek bayangan */
+        }
+        .org-chart {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .org-chart-description {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(15, 91, 244, 0.689);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+            text-align: justify;
+        }
+        @media (max-width: 768px) {
+            .info-box {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .info-box img {
+                margin-left: 0;
+                margin-bottom: 15px;
+            }
+            .info-box-content {
+                max-width: none;
+            }
+            .org-chart img {
+                width: 100%; /* Sesuaikan gambar untuk layar kecil */
+            }
+            .org-chart-description {
+                padding: 15px;
+            }
+        }
+
+        /* Background untuk header */
+        .header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-left .logo {
+            width: 80px;
+            height: auto;
+        }
+        .header-left .title h2,
+        .header-left .title h3 {
+            margin: 0;
+            color: #fff;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        /* Background untuk footer */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-left .logo {
+            width: 80px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .footer-right h2 {
+            color: #fff;
+            margin-top: 0;
+        }
+        .footer-right p {
+            margin: 5px 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="Logo_Kota_Bukittinggi.png" alt="Logo Instansi" class="logo"> <!-- Ganti dengan jalur ke logo instansi Anda -->
+            <div class="title">
+                <h2>SIMTARU</h2>
+                <h3>BUKITTINGGI</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="peta.html">Peta</a></li>
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="dokumen.html">Dokumen</a></li>
+                <li><a href="pengaduan.html">Pengaduan</a></li>
+                <li><a href="tentang_kami.html">Tentang Kami</a></li>
+                <li><a href="layanan_informasi.html">Layanan Informasi</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Tentang Kami</h1>
+        <div class="info-section">
+            <div class="info-box">
+                <div class="info-box-content">
+                    <h2>Informasi Instansi</h2>
+                    <p>
+                        SIMTARU (Sistem Informasi Tata Ruang) adalah sistem yang dikembangkan oleh Dinas Pekerjaan Umum dan Penataan Ruang (PUPR) Kota Bukittinggi. Sistem ini bertujuan untuk memantau, merencanakan, dan mengendalikan tata ruang secara digital dan efisien.
+                    </p>
+                    <p>
+                        Dinas PUPR Kota Bukittinggi memiliki peran penting dalam pengembangan infrastruktur kota dan pengelolaan ruang kota untuk mendukung pembangunan berkelanjutan dan kesejahteraan masyarakat.
+                    </p>
+                </div>
+                <img src="gambar pupr.jpeg" alt="Foto Instansi"> <!-- Ganti dengan jalur ke foto instansi Anda -->
+            </div>
+            <div class="info-box">
+                <div class="info-box-content">
+                    <h2>Informasi Website</h2>
+                    <p>
+                        Website SIMTARU dirancang untuk menyediakan informasi lengkap mengenai tata ruang kota, termasuk peta digital, dokumen terkait, berita terbaru, dan fasilitas pengaduan. 
+                    </p>
+                    <p>
+                        Kami berkomitmen untuk memberikan informasi yang transparan dan mudah diakses untuk semua pihak yang berkepentingan, serta menyediakan alat untuk pelaporan dan masukan dari masyarakat.
+                    </p>
+                </div>
+                <img src="gambar pupr.jpeg" alt="Foto Instansi"> <!-- Ganti dengan jalur ke foto instansi Anda -->
+            </div>
+        </div>
+
+        <div class="org-chart">
+            <h2>Struktur Organisasi</h2>
+            <img src="struktur.jpeg" alt="Bagan Struktur Organisasi"> <!-- Ganti dengan jalur ke gambar bagan struktur organisasi Anda -->
+        </div>
+        <div class="org-chart-description">
+            <p>
+                Bagan struktur organisasi ini menunjukkan alur kepemimpinan dan tanggung jawab dalam Dinas PUPR Kota Bukittinggi. Setiap divisi memiliki peran yang jelas dalam pengembangan dan pemeliharaan infrastruktur kota, serta dalam pengelolaan tata ruang.
+            </p>
+            <p>
+                Tim SIMTARU terdiri dari berbagai ahli di bidang teknologi informasi, tata ruang, dan desain web, yang semuanya bekerja sama untuk memastikan bahwa sistem ini memenuhi standar tertinggi dan memberikan manfaat maksimal bagi masyarakat.
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-left">
+            <img src="Logo_Kota_Bukittinggi.png" alt="Logo Instansi Footer" class="logo"> <!-- Ganti dengan jalur ke logo instansi Anda -->
+            <img src="logo pupr.jpg" alt="Logo PUPR" class="logo"> <!-- Ganti dengan jalur ke logo PUPR Anda -->
+        </div>
+        <div class="footer-right">
+            <h2>Alamat Kantor</h2>
+            <p>Jl. Ombilin No.169, Belakang Balok, Kec. Aur Birugo Tigo Baleh, Kota Bukittinggi, Sumatera Barat 26181</p>
+            <p>SIMTARU Dinas Pekerjaan Umum dan Penataan Ruang (PUPR) Kota Bukittinggi</p>
+            <p>&copy; 2024 SIMTARU Kota Bukittinggi</p>
+        </div>
+    </div>
+</body>
+</html>

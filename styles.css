@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('indonesia.JPG') no-repeat center center fixed; /* Ganti dengan jalur ke gambar latar belakang Anda */
+    background-size: cover;
+    color: #fff; /* Warna teks default */
+    overflow-y: scroll; /* Mengaktifkan scroll vertikal */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1000;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header img.logo {
+    max-height: 70px; /* Sesuaikan tinggi logo */
+}
+.header .title {
+    margin-left: 15px;
+    text-align: left;
+}
+.header .title h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.header .title h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.header nav {
+    display: flex;
+}
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.header nav ul li {
+    margin-left: 20px;
+}
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+.container {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* Mengurangi jarak untuk menggeser judul sedikit ke atas */
+}
+h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #fff; /* Warna teks judul utama */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Efek bayangan teks untuk keterbacaan */
+}
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+.main-content .text-content {
+    flex: 1;
+}
+.main-content img {
+    max-height: 300px; /* Sesuaikan tinggi gambar Min */
+    border: 5px solid #080808; /* Menambahkan bingkai pada gambar */
+    margin-left: 30px;
+}
+p {
+    font-size: 18px;
+    color: #fff; /* Warna teks paragraf */
+}
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+}
+.info-box {
+    width: 48%;
+}
+.info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.info-box p {
+    font-size: 16px;
+    color: #fff;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+}
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.service img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .footer-left {
+    display: flex;
+    align-items: center;
+}
+.footer .footer-left img {
+    max-height: 70px; /* Sesuaikan tinggi logo di footer */
+    margin-right: 15px;
+}
+.footer .footer-right {
+    text-align: center;
+    flex: 1;
+}
+.footer h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #fff;
+}
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
